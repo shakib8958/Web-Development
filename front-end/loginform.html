@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <for>
+                <form text="action" method="post">
+                   <center><h1> Registration form</h1>
+                    <input type="text" placeholder="user name" id="uname">
+                    <br>
+                    <input type="password" placeholder="password" id="pwd">
+                    <br>
+                    <select id="utype">
+                        <option valeu="temaray"> temaray</option>
+                        <option valeu="parament"> parament</option>
+                        
+                    </select>
+                    <br>
+                    <button type="submit"  onclick="chk();"> submit </button>
+                    <p> user name:<span id="display_name"></span></p>
+                    <p> password name:<span id="display_pwd"></span></p>
+                    <p> emp  name:<span id="display_type"></span></p>
+                 </center>
+                 <script>
+                    function chk()
+                    {
+                        let uname=document.getElementById("uname").value;
+                        let pwd=document.getElementById("pwd").value;
+                        let utype=document.getElementById("utype").value;
+                        display_name.innerHTML=uname;
+                        display_password.innerHTML=pwd;
+                        display_utype.innerHTML=utype;
+                        event.preventDefault();
+
+                    }
+                    </script>
+
+                </form>
+            </for>
+        </body>
+    </head>
+</html>
