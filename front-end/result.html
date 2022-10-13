@@ -1,0 +1,73 @@
+<html>
+<head>
+    <script type="text">
+    function chk()
+    {
+        var a=parseInt(document.getElementById("book1").value);
+        var b=parseInt(document.getElementById("book2").value);
+        var c=parseInt(documnet.getElementById("book3").value);
+        var d=parseInt(document.getElementById("book5").value);
+        if(a>100 || b>100 ||c>100 ||d>100)
+        {
+            alert("please enter the value");
+        }
+    }
+</script>
+
+    <body>
+        <div class="container">
+            <form>
+                <div class="book1">
+                    <label> computer </label>
+                    <input id="book1" type="number" name="" placeholder="marks">
+                </div>
+                <div class="book2">
+                    <label> math </label>
+                    <input id="book2" type="number" name="" placeholder="marks">
+                </div>
+               <div class="book3">
+                    <label> english</label>
+                    <input id="book3" type="number" name="" placeholder="marks">
+                </div>
+                <div class="book5">
+                    <label>  urdu </label>
+                    <input id="book5"type="number" name="" placeholder="marks">
+                </div>
+                <div>
+                    <button type="button" onclick="chk();"> calculate</button>
+                </div>
+            </form>
+            <div>
+                <table>
+                    <tr>
+                        <td> total grade:</td>
+                        <td> 500 </td>
+                    </tr>
+                    <tr>
+                        <td> obtained marks:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> parecntage:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td> grade:</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>reamark:</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+    
+
+
+    </body>
+</head>
+
+
+</html>
+                
+                
