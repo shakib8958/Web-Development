@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            h1{
+                text-align: center;
+                background-color: brown;
+                padding: 50px;
+                position: relative;
+                gap: 500px;
+                flex:30px;
+                z-index:10px;
+
+
+            }
+            ul::after:li{
+                text-align: center;
+            }
+        </style>
+        <title> this is dom page </title>
+    </head>
+    <body>
+        <h1> This is Dom Page </h1>
+        <div id="Header">
+            <ul id="Course">
+                <li> Hello </li>
+                <li id="first"> Hello </li>
+                <li> Hello </li>
+                <li> Hello </li>
+            </ul>
+        </div>
+        <script>
+            var elm=document.getElementById("first");
+            elm.innerText= "Class runnig on ";
+            console.log("elm");
+        </script>
+    </body>
+</html>
