@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<script>
+ function Student()
+{
+	this.Name="Name";
+	
+}
+Student.prototype.print=function()
+{
+	return "Student is: "+this.Name;
+}
+function KG(Name)
+{
+	this.Name=Name;
+}
+KG.prototype=Object.create(Student.prototype);
+var kg=new KG("Vivek");
+document.writeln(kg.print());
+ 
+ 
+ </script>
+ 
+</body>
+</html>
